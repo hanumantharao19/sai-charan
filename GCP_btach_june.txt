@@ -1,0 +1,100 @@
+pwd
+ls
+ls -lrt
+cd
+mkdir --> to create directroy
+rmdir  --To remvoe empty directory
+rm -rf --> to remove directory which has some files
+mv souce destination > to move the files form one palce to other or rename the directory or file
+copy source destination # to copy the files and directories form one palce ot other pace
+free -m # to know availabe memory
+top # to chekc load and processes in server
+yum install httpd  -> to install httpd package
+yum list httpd  # to know that package is installed or not
+systemctl status httpd # to know the status of httpd 
+systemctl start httpd  # to start the httpd service
+systemctl enable httpd # to enable service
+
+directory
+---------
+onwer group other   owner group  directory
+rwx   r-x   r-x     root   root    hanu
+421   401   401
+7      5     5
+
+default permission of the directory 755    
+
+r -4
+w -2
+x -1
+-  -0
+
+chmod # it is used to change the permission
+chmod 740  hanu
+
+
+onwer group other   owner group  filename/directory
+rwx   r--   ---     root   root    hanu
+421   400   000
+7      5     5
+
+
+file
+----
+
+onwer group other   owner group  filename
+rw-   r--   r--     root   root    text.txt
+420   400   400
+6      4     4
+
+default permession for file --> 644
+
+chmod 777  text.txt
+
+
+onwer group other   owner group  filename
+rwx   rwx   rwx     root   root    text.txt
+421   421   421
+7      7     7
+
+
+to change owner ship of directoy
+chown # iit is used to change the ownership of the file or directory
+ste1: useradd pavan
+step2: chown pavan:pavan  hanu
+
+onwer group other   owner group  directory
+rwx   r-x   r-x     pavan   pavan    hanu
+421   401   401
+7      5     5
+
+
+chown -R pavan:pavan  hanu
+
+chown -R  # to change the permission recursively
+
+cat /etc/redhat-relase  # to know linux version
+ifconfig  # to know the server ip
+netstat -ntlp # it used to know what are ports are running in the server
+tail -f # to check the running logs
+tail -10  # it give the last ten lines of the file 
+head -10 # it give  the first ten lines of the file
+ps -ef | grep proceesname # it will give process id
+
+
+hanumantharao medikonda
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
